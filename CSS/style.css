@@ -2,3 +2,160 @@ body{
     margin: 0;
     padding: 0;
 }
+/* navbar */
+.container-navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color:white;
+    position: sticky;
+    top: 0;
+}
+nav{
+    
+    background: #047A94;
+    padding: 0.7rem;
+    border-radius:0 20px;
+}
+nav ul{
+    display: flex;
+}
+.logo{
+    width:12%;
+}
+.logo img{
+    width: 100%;
+}
+.manu{
+    width: 88%;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 30px;
+    
+}
+
+/* main-body */
+.container-body{
+    background: #047A94;
+}
+.container-main{
+    
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.img{
+    width: 50%;
+}
+.img img{
+    width: 100%;
+}
+.indrouce{
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+.indrouce h1{
+    font-size: 50px;
+}
+.indrouce p{
+    font-size: 30px;
+    line-height: 2;
+}
+.button-read button{
+    padding: 10px 30px;
+}
+.button-download{
+    display: flex;
+    justify-content: center;
+}
+.button-download button{
+    padding: 12px 50px;
+    margin: 20px;
+}
+.title{
+    text-align: center;
+}
+.container-padding{
+    padding: 10px;
+}
+.p-1{
+    padding: 20px;
+    background: gray;
+}
+.container-box{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    background: gray;
+}
+.box-show{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    margin: 5px;
+}
+.left{
+    width: 90%;
+    background: #047A94;
+}
+.right{
+    background: gray;
+    width: 10%;
+}
+.Percentage{
+    display: flex;
+}
+
+footer{
+    padding: 10px;
+    background: gray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-footer img{
+    width: 65%;
+}
+.text-footer{
+    width: 10%;
+}
+.contact-footer{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .container-navbar{
+        width: 100%;
+    }
+    .logo{
+        width: 21%;
+    }
+    .logo img{
+        width: 100%;
+    }
+}
+@media(max-width:400px){
+    .container-navbar{
+        display: block;
+    }
+    .nav ul li{
+        display: block;
+    }
+}
