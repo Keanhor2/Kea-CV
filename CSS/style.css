@@ -375,9 +375,6 @@ input{
         width: 100%;
         border-radius: none;
     }
-    .logo{
-        display: none;
-    }
     .indrouce h1{
         font-size: 35px;
     }
@@ -404,23 +401,86 @@ input{
         display: block
     }
         nav ul{
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
         nav{
             background: #fff;
             padding: 0;
             width: 100%;
+            margin: 0;
         }
         nav ul li{
             background: #045061;
-            margin-top: 10px;
-            padding: 15px;
+            width: 100%;
+            margin:5px 0;
+            text-align: center;
+            padding: 15px 0;
+
     
         }
         
+    .container-main{
+        flex-wrap: wrap;
+        display: block;
+        
+    }
+    .indrouce h1{
+        font-size: 35px;
+        
+    }
+    .indrouce p{
+        font-size: 18px;
+        line-height: 2;
+    }
+    .img{
+        width: 100%;
+    }
+    .indrouce{
+        width: 100%;
+    }
+
+    .text-nav{
+        width: 20%;
+    }
+    .container-box{
+        display:block;
+        flex-wrap: wrap;
+    }
+    
+    .box-show{
+        width: 93%;
+        margin: 1rem 0;
+    }
+ footer{
+    display: block;
+    text-align: center;
+ }
+ .logo-footer img{
+    width: 25%;
+ }
+ .text-footer{
+    text-align: center;
+    width: 100%;
+ }
+ .media{
+     display: flex
+ }
+.media img{
+     text-align: center;
+    padding: 5px;
+    width: 100%;
+ }
+}
 
 
+
+.a{
+    display: flex;justify-content: center;
+    align-items: center;
 }
 
 
@@ -442,7 +502,25 @@ input{
 
 
 
-/* @media(max-width: 1023px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @media(max-width: 1023px){
     .container-navbar{
         flex-wrap: wrap;
         
@@ -482,10 +560,10 @@ input{
         flex-wrap: wrap;
     }
 }
-@media(max-width: 760px){
+ @media(max-width: 760px){
     .box-show{
-        /* flex-wrap: wrap;
-        display: block; */
+     flex-wrap: wrap;
+        display: block; 
         width: 96%;
     }
 } */
