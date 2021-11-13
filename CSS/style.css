@@ -3,19 +3,12 @@ body{
     padding: 0;
 }
 /* navbar */
-.container-navbar{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color:white;
+nav{
     position: sticky;
     top: 0;
-}
-nav{
-    
-    background: #047A94;
+    background: #045061;
     padding: 0.7rem;
-    border-radius:0 20px;
+    width: 100%;
 }
 nav ul{
     display: flex;
@@ -26,10 +19,6 @@ nav ul{
 .logo img{
     width: 100%;
 }
-.manu{
-    width: 88%;
-}
-
 nav ul li{
     list-style: none;
 }
@@ -41,9 +30,10 @@ nav ul li a{
     
 }
 
+
 /* main-body */
 .container-body{
-    background: #047A94;
+    background: #045061;
 }
 .container-main{
     
@@ -120,7 +110,7 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .box-show{
     width: 28%;
@@ -220,7 +210,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border: 2px solid #047A94;
+    border: 2px solid #033F4D;
 }
 .card-img{
     width: 50%;
@@ -259,8 +249,40 @@ footer{
     font-size: 50px;
     color:#ffff;
 }
+.pd-parent{
+    padding: 10px;
+}
+.parent{
+    padding: 10px;
+    border: 2px solid #047A94;
+}
+.parent h1{
+    text-align: center;
+    font-size: 30px;
+    background: #047A94;
+    padding: 10px;
+    color: #fff;
+}
 .d-child{
     display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.child-img{
+    width: 47%;
+}
+.child-img img{
+    margin-top: 25px;
+}
+.child-text{
+    display: flex;
+    justify-content: center;
+    width: 47%;
+    font-size: 20px;
+
+}
+.child-text p{
+    line-height: 2;
 }
 
 /* FOMR */
@@ -340,7 +362,66 @@ input{
 }
 /* ---------------------------------------- */
 /* Tablet screen */
+.group-wrap{
+    flex-wrap: wrap;
+    display: block
+}
+@media(max-width:1023px){
+    .logo img{
+        width:100%
+        
+    }
+    nav{
+        width: 100%;
+        border-radius: none;
+    }
+    .logo{
+        display: none;
+    }
+    .indrouce h1{
+        font-size: 35px;
+    }
+    .indrouce p{
+        font-size: 18px;
+        line-height: 2;
+    }
+}
+@media(max-width:767px){
+    
+    .container-navbar{
+        flex-wrap: wrap;
+    }
+    
+    .indrouce h1{
+        font-size: 35px;
+    }
+    .indrouce p{
+        font-size: 15px;
+        line-height: 2;
+    }
+    .group-wrap{
+        flex-wrap: wrap;
+        display: block
+    }
+        nav ul{
+            flex-wrap: wrap;
+            display: block;
+        }
+        nav{
+            background: #fff;
+            padding: 0;
+            width: 100%;
+        }
+        nav ul li{
+            background: #045061;
+            margin-top: 10px;
+            padding: 15px;
+    
+        }
+        
 
+
+}
 
 
 
