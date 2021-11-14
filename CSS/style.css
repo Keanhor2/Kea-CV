@@ -112,7 +112,7 @@ nav ul li a{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
-.box-show1,.box-show2,.box-show3,.box-show4,.box-show5,
+.box-show1,.box-show3,.box-show5,
 .box-show6{
     background: white;
     padding: 20px;
@@ -209,11 +209,14 @@ footer{
     
 }
 
-.grid1,.grid2,.grid3,.grid4,.grid5,.grid6{
-    background-color: rgba(128, 128, 128, 0.52);
+.grid1,.grid3,.grid5{
     height: 50vh;
-    font-size: 25px;
+    
+}
+.grid2,.grid4,.grid6{
+    font-size: 20px;
     padding: 20px;
+    background-color: rgba(128, 128, 128, 0.52);
 }
 .grid1{
     background: url(../images/images.!\ \(3\).jpg);
@@ -249,61 +252,80 @@ footer{
     "child6 child6 child7 child7 child8 child8";
     
 }
-.child1,.child2,.child3,.child4,.child5,
-.child6,.child7,.child8{
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-}
+
+
 
 .child1{
     grid-area: child1;
     background: teal;
     height:102vh ;
-    background-image: url(../images/images.!\ \(5\).jpg);
-
+   background-image: url(../images/images.!\ \(5\).jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 .child2{
     grid-area: child2;
     background: teal;
     background-image: url(../images/images.!\ \(1\).jpg);
     height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .child3{
     grid-area: child3;
     background: teal;
     background-image: url(../images/images.!.jpg);
     height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .child4{
     grid-area: child4;
     background: teal;
     height: 80vh;
     background-image: url(../images/images.!\ \(6\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .child5{
     grid-area: child5;
     background: teal;
     background-image: url(../images/images.!\ \(7\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .child6{
     grid-area: child6;
     background: teal;
     height: 100vh;
     background-image: url(../images/images.!\ \(8\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .child7{
     grid-area: child7;
     background: teal;
     height: 100vh;
     background-image: url(../images/images.!\ \(9\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .child8{
     grid-area: child8;
     background: teal;
     height: 100vh;
     background-image: url(../images/images.!\ \(10\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -316,7 +338,7 @@ footer{
     align-items: center;
     justify-content: center;
     margin-top:0;
-    background-image:linear-gradient(rgba(32, 32, 32, 0.719),rgba(32, 32, 32, 0.75)), url(../images/industry-g0a4b96680_1920.jpg);
+    background-image:linear-gradient(rgba(32, 32, 32, 0.719),rgba(32, 32, 32, 0.75)), url(../images/woman-gdf84320bd_1920.jpg);
     background-size: cover;
     height: 85vh;
     background-position: center;
@@ -480,7 +502,7 @@ input{
     display: flex;justify-content: center;
     align-items: center;
 }
-@media(max-width:768px){
+@media(max-width:767px){
     .logo img{
         width:100%
         
@@ -588,21 +610,22 @@ input{
 .main-img p{
     font-size: 25px;
 }
+.mg-t{
+    margin-top: 10px;
+}
 /* hobbies page */
 .main-box{
     display: block;
 }
-.first-img{
+/* .first-img{
     margin-top: 40px;
-}
+} */
 .box1,.box3,.box5,
 .box7,.box9,
 .box11{
     height: 60vh;
 }
-/* .box2,.box4,.box6,.box8,.box10,.box12{
-    
-} */
+
 /* .contact page */
 form{
     display: block;
