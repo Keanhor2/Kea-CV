@@ -92,11 +92,12 @@ nav ul li a{
 }
 .text-nav {
 
-    width: 10%;
+    width: 12%;
     background: #047A94;
     color: #ffff;
     font-size: 15px;
     border-radius: 0 35px 0 0 ;
+    padding: 5px;
 }
 .subtitle .bt-bottom{
     width: 90%;
@@ -112,10 +113,16 @@ nav ul li a{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
-.box-show1,.box-show3,.box-show5,
+.box-show1,.box-show2,.box-show3,.box-show4,.box-show5,
 .box-show6{
     background: white;
     padding: 20px;
+}
+.font-size{
+    font-size: 40px;
+}
+.percent{
+    text-align: center;
 }
 
 .left-1{
@@ -650,15 +657,13 @@ input[type="text"]{
     display: block;
     text-align: center;
  }
- 
- .grid-logo img{
+.grid-logo img{
     display: none;
 }
 .gird-logo img{
     width: 30%;
 }
 
- 
 }
 
 
