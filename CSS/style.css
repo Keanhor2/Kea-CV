@@ -4,20 +4,15 @@ body{
 }
 /* navbar */
 nav{
+    box-sizing: border-box;
     position: sticky;
     top: 0;
     background: #045061;
     padding: 0.7rem;
-    width: 100%;
+    /* width: %; */
 }
 nav ul{
     display: flex;
-}
-.logo{
-    width:12%;
-}
-.logo img{
-    width: 100%;
 }
 nav ul li{
     list-style: none;
@@ -94,31 +89,24 @@ nav ul li a{
 }
 .subtitle .bt-bottom{
     width: 90%;
-    /* background: subtitle; */
     border-bottom:4px solid #047A94;
 }
 .container-padding{
     padding: 10px;
 }
-.p-1{
-    padding: 20px;
-    background: rgba(128, 128, 128, 0.452);
-    
-}
 .container-box{
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* flex-wrap: wrap; */
-}
-.box-show{
-    width: 28%;
-    background: #fff;
+    background: rgba(128, 128, 128, 0.445);
     padding: 20px;
-    margin: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
+.box-show1,.box-show2,.box-show3,.box-show4,.box-show5,
+.box-show6{
+    background: white;
+    padding: 20px;
+}
+
 .left-1{
     width: 95%;
     border: 10px solid #047A94
@@ -162,24 +150,21 @@ nav ul li a{
 }
 .Percentage{
     display: flex;
-}
-
+} 
+/* footer */
 footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
     padding: 10px;
     background: gray;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
 }
 
-.logo-footer img{
-    width: 65%;
-}
-.text-footer{
-    width: 10%;
-}
-.contact-footer{
-    width: 20%;
-}
+
+
+
+
 /*--------------------------------------*\
 /* About page */
 .main-img{
@@ -201,46 +186,121 @@ footer{
     color: #fff;
     text-align: center;
 }
-.pd-section{
+.section1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
     padding: 10px;
+    
+    
 }
-.main-card{
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6{
+    background-color: teal;
+    height: 50vh;
+}
+.grid1{
+    background: url(../images/images.!\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid3{
+    background: url(../images/images.!\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid5{
+    background: url(../images/images.!\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2{
     padding: 10px;
-    border: 2px solid #033F4D;
-}
-.card-img{
-    width: 50%;
-    padding-right: 20px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    grid-template-areas:
+    "child1 child1 child1 child2 child2 child2"
+    "child1 child1 child1 child3 child3 child3"
+    "child4 child4 child4 child5 child5 child5"
+    "child6 child6 child7 child7 child8 child8";
     
 }
-.card-img img{
-    width: 100%;
+.child1{
+    grid-area: child1;
+    background: teal;
+    height:100vh ;
+    background-image: url(../images/images.!\ \(5\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.card-text{
-    width: 50%;
-    box-sizing: border-box;
-    font-size: 30px;
+.child2{
+    grid-area: child2;
+    background: teal;
+    background-image: url(../images/images.!\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.child3{
+    grid-area: child3;
+    background: teal;
+    background-image: url(../images/images.!.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.child4{
+    grid-area: child4;
+    background: teal;
+    height: 80vh;
+    background-image: url(../images/images.!\ \(6\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.child5{
+    grid-area: child5;
+    background: teal;
+    background-image: url(../images/images.!\ \(7\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
-.images-container{
-    
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    
+.child6{
+    grid-area: child6;
+    background: teal;
+    height: 120vh;
+    background-image: url(../images/images.!\ \(8\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.bottom-img{
-    margin-top: 5px;
+.child7{
+    grid-area: child7;
+    background: teal;
+    height: 120vh;
+    background-image: url(../images/images.!\ \(9\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.child8{
+    grid-area: child8;
+    background: teal;
+    height: 120vh;
+    background-image: url(../images/images.!\ \(10\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /* hobbies page */
 
 .first-img{
-    background-image:linear-gradient(rgba(32, 32, 32, 0.719),rgba(32, 32, 32, 0.75)), url(../images/photo_2021-11-09_09-02-37.jpg);
+    background-image:linear-gradient(rgba(32, 32, 32, 0.719),rgba(32, 32, 32, 0.75)), url(../images/industry-g0a4b96680_1920.jpg);
     background-size: cover;
     height: 85vh;
     text-align: center;
@@ -249,43 +309,50 @@ footer{
     font-size: 50px;
     color:#ffff;
 }
-.pd-parent{
-    padding: 10px;
+.main-box{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    border: 2px solid teal;
+    padding: 20px;
+    
+    
 }
-.parent{
-    padding: 10px;
-    border: 2px solid #047A94;
-}
-.parent h1{
-    text-align: center;
-    font-size: 30px;
-    background: #047A94;
-    padding: 10px;
-    color: #fff;
-}
-.d-child{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-.child-img{
-    width: 47%;
-}
-.child-img img{
-    margin-top: 25px;
-}
-.child-text{
-    display: flex;
-    justify-content: center;
-    width: 47%;
-    font-size: 20px;
+.box1,.box2,.box3,.box4,.box5,
+.box6,.box7,.box8,.box9,.box10,
+.box11,.box12{
+    background: teal;
+    height: 70vh;
 
+    
 }
-.child-text p{
-    line-height: 2;
+.box1{
+    background-image: url(../images/New\ Project\ \(6\).jpg);
+    
+}
+.box3{
+    background-image: url(../images/New\ Project\ \(1\).jpg);
+    
+}
+.box5{
+    background-image: url(../images/New\ Project\ \(2\).jpg);
+    
+}
+.box7{
+    background-image: url(../images/New\ Project\ \(3\).jpg);
+    
+}
+.box9{
+    background-image: url(../images/New\ Project\ \(7\).jpg);
+    
+}
+.box11{
+    background-image: url(../images/New\ Project\ \(5\).jpg);
+    
 }
 
-/* FOMR */
+/* contact FOMR */
 .container-contact{
     padding:10px;
 }
@@ -312,13 +379,14 @@ form{
     justify-content: space-between;
 }
 input[type="text"]{
-    width: 45%;
-    padding: 13px ;
+    width: 44%;
+    padding: 15px ;
 }
 input[type="email"],
 input[type="password"]{
-    width: 95.4%;
-    padding: 13px ;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px ;
 }
 input[type="submit"]{
     padding: 13px 30px;
@@ -339,10 +407,11 @@ input[type="submit"]:hover{
     justify-content: space-between;
 }
 input{
-    margin-top: 30px;
+    margin-top: 35px;
     border: none;
 }
 .contact-right{
+    height: 105vh;
     background-image:linear-gradient(rgba(110, 110, 110, 0.75),rgba(114, 114, 114, 0.75)), url(../images/coding.png);
     width: 50%;
     box-sizing: border-box;
@@ -366,6 +435,10 @@ input{
     flex-wrap: wrap;
     display: block
 }
+.a{
+    display: flex;justify-content: center;
+    align-items: center;
+}
 @media(max-width:1023px){
     .logo img{
         width:100%
@@ -382,24 +455,32 @@ input{
         font-size: 18px;
         line-height: 2;
     }
+    .main-img h1{
+        font-size: 40px;
+
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    .grid-logo img{
+        width: 20%;
+    }
+    .media{
+        width: 100%;
+    }
+    
 }
 @media(max-width:767px){
-    
+
+    /* navbar */
     .container-navbar{
         flex-wrap: wrap;
     }
     
-    .indrouce h1{
-        font-size: 35px;
-    }
-    .indrouce p{
-        font-size: 15px;
-        line-height: 2;
-    }
-    .group-wrap{
-        flex-wrap: wrap;
-        display: block
-    }
+    
+   
         nav ul{
             /* flex-wrap: wrap; */
             display: block;
@@ -422,6 +503,7 @@ input{
 
     
         }
+        /* homepage */
         
     .container-main{
         flex-wrap: wrap;
@@ -447,41 +529,47 @@ input{
         width: 20%;
     }
     .container-box{
-        display:block;
-        flex-wrap: wrap;
+        display: block;
+        
     }
-    
-    .box-show{
-        width: 93%;
-        margin: 1rem 0;
+    .box-show1,.box-show2,.box-show3,.box-show4,.box-show5,.box-show6{
+        margin-top: 10px;
     }
+/* aboutpage */
+.section1,.section2{
+    display: block;
+}
+/* hobbies page */
+.main-box{
+    display: block;
+}
+/* .contact page */
+form{
+    display: block;
+}
+.contact-left,.contact-right{
+    width: 100%;
+}
+.form-name{
+   flex-wrap: wrap;
+}
+
+
+/* footer */
  footer{
     display: block;
     text-align: center;
  }
- .logo-footer img{
-    width: 25%;
- }
- .text-footer{
-    text-align: center;
-    width: 100%;
- }
- .media{
-     display: flex
- }
-.media img{
-     text-align: center;
-    padding: 5px;
-    width: 100%;
- }
+ 
+ .grid-logo img{
+    display: none;
+}
+ 
 }
 
 
 
-.a{
-    display: flex;justify-content: center;
-    align-items: center;
-}
+
 
 
 
