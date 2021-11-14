@@ -9,7 +9,7 @@ nav{
     top: 0;
     background: #045061;
     padding: 0.7rem;
-    /* width: %; */
+
 }
 nav ul{
     display: flex;
@@ -160,6 +160,9 @@ footer{
     background: gray;
     text-align: center;
 }
+.gird-logo img{
+    width: 30%;
+}
 
 
 
@@ -176,13 +179,13 @@ footer{
     background-repeat: no-repeat;
 }
 .main-img h1{
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
     text-align: center;
     margin-top: 100px;
 }
 .main-img p{
-    font-size: 35px;
+    font-size: 30px;
     color: #fff;
     text-align: center;
 }
@@ -198,10 +201,13 @@ footer{
 .grid1,.grid2,.grid3,.grid4,.grid5,.grid6{
     background-color: teal;
     height: 50vh;
+    font-size: 25px;
+    padding: 20px;
 }
 .grid1{
     background: url(../images/images.!\ \(3\).jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -209,12 +215,14 @@ footer{
     background: url(../images/images.!\ \(2\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .grid5{
     background: url(../images/images.!\ \(4\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .section2{
@@ -230,28 +238,30 @@ footer{
     "child6 child6 child7 child7 child8 child8";
     
 }
+.child1,.child2,.child3,.child4,.child5,
+.child6,.child7,.child8{
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
 .child1{
     grid-area: child1;
     background: teal;
-    height:100vh ;
+    height:102vh ;
     background-image: url(../images/images.!\ \(5\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 .child2{
     grid-area: child2;
     background: teal;
     background-image: url(../images/images.!\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 50vh;
 }
 .child3{
     grid-area: child3;
     background: teal;
     background-image: url(../images/images.!.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 50vh;
 }
 .child4{
@@ -259,55 +269,56 @@ footer{
     background: teal;
     height: 80vh;
     background-image: url(../images/images.!\ \(6\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 .child5{
     grid-area: child5;
     background: teal;
     background-image: url(../images/images.!\ \(7\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
 }
 .child6{
     grid-area: child6;
     background: teal;
-    height: 120vh;
+    height: 100vh;
     background-image: url(../images/images.!\ \(8\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .child7{
     grid-area: child7;
     background: teal;
-    height: 120vh;
+    height: 100vh;
     background-image: url(../images/images.!\ \(9\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .child8{
     grid-area: child8;
     background: teal;
-    height: 120vh;
+    height: 100vh;
     background-image: url(../images/images.!\ \(10\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
 /* hobbies page */
 
 .first-img{
+    margin-top:0;
     background-image:linear-gradient(rgba(32, 32, 32, 0.719),rgba(32, 32, 32, 0.75)), url(../images/industry-g0a4b96680_1920.jpg);
     background-size: cover;
     height: 85vh;
-    text-align: center;
+    background-position: center;
 }
-.first-img h1,.first-img p{
-    font-size: 50px;
+.first-img h1{
+    font-size: 40px;
     color:#ffff;
+}
+.first-img h1,.frist-img p{
+    display: flex;
+    justify-content: center;
+}
+.first-img p{
+    padding: 10px;
+    font-size: 26px;
+    color:#ffff;
+    text-align: center;
+
 }
 .main-box{
     margin: 10px;
@@ -322,13 +333,25 @@ footer{
 .box1,.box2,.box3,.box4,.box5,
 .box6,.box7,.box8,.box9,.box10,
 .box11,.box12{
-    background: teal;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
     height: 70vh;
 
     
 }
+.box2,.box4,.box6,.box8,.box10,.box12{
+    background: rgba(128, 128, 128, 0.52);
+    padding: 20px;
+    font-size: 20px;
+    height: 63.5vh;
+}
+.box2 h1,.box4 h1,.box6 h1,.box8 h1,.box10 h1,.box12 h1{
+    font-size: 40px;
+}
 .box1{
     background-image: url(../images/New\ Project\ \(6\).jpg);
+
     
 }
 .box3{
@@ -367,7 +390,7 @@ form{
 .contact-left{
     width: 50%;
     box-sizing: border-box;
-    background-color: rgba(12, 12, 12, 0.438);
+    background-color: rgba(41, 41, 41, 0.438);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     padding: 30px;
 }
@@ -412,9 +435,11 @@ input{
 }
 .contact-right{
     height: 105vh;
-    background-image:linear-gradient(rgba(110, 110, 110, 0.75),rgba(114, 114, 114, 0.75)), url(../images/coding.png);
+    background-image: url(../images/coding.png);
     width: 50%;
     box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .contact-right h1,.contact-right h2,
@@ -533,15 +558,24 @@ input{
         
     }
     .box-show1,.box-show2,.box-show3,.box-show4,.box-show5,.box-show6{
-        margin-top: 10px;
+        margin-top: 20px;
     }
 /* aboutpage */
 .section1,.section2{
     display: block;
 }
+.main-img h1{
+    font-size: 35px;
+}
+.main-img p{
+    font-size: 25px;
+}
 /* hobbies page */
 .main-box{
     display: block;
+}
+.box2,.box4,.box6,.box8,.box10,.box12{
+    height: 60vh;
 }
 /* .contact page */
 form{
@@ -552,6 +586,13 @@ form{
 }
 .form-name{
    flex-wrap: wrap;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 15px ;
+}
+.gird-text{
+    display: none;
 }
 
 
@@ -564,6 +605,10 @@ form{
  .grid-logo img{
     display: none;
 }
+.gird-logo img{
+    width: 30%;
+}
+
  
 }
 
