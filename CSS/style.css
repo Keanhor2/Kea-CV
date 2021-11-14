@@ -437,7 +437,7 @@ form{
     box-sizing: border-box;
     background-color: rgba(41, 41, 41, 0.438);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    padding: 30px;
+    padding: 10px;
 }
 .logo-contact img{
     width: 20%;
@@ -637,6 +637,7 @@ input{
 form{
     display: block;
 }
+
 .contact-left,.contact-right{
     width: 100%;
 }
@@ -649,6 +650,12 @@ input[type="text"]{
 }
 .gird-text{
     display: none;
+}
+.submit{
+    display: block;
+}
+input[type="submit"]{
+    width: 100%;
 }
 
 
