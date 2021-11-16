@@ -92,12 +92,12 @@ nav ul li a{
 }
 .text-nav {
 
-    width: 12%;
+    width: 13%;
     background: #045061;
     color: #ffff;
     font-size: 15px;
-    border-radius: 0 35px 0 0 ;
-    padding: 5px;
+    border-radius: 0 20px 0 0 ;
+    padding: 3px;
 }
 .subtitle .bt-bottom{
     width: 90%;
@@ -526,6 +526,11 @@ input{
         font-size: 40px;
 
     }
+    .container-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
     footer{
         display: grid;
         grid-template-columns: auto auto;
@@ -588,6 +593,7 @@ input{
 
     
         }
+    
         /* homepage */
         
     .container-main{
@@ -620,6 +626,13 @@ input{
     .box-show1,.box-show2,.box-show3,.box-show4,.box-show5,.box-show6{
         margin-top: 20px;
     }
+
+    .text-nav {
+        width: 28%;
+        border-radius: 0 20px 0 0 ;
+        padding: 3px;
+    }
+
 /* aboutpage */
 .section1,.section2{
     display: block;
